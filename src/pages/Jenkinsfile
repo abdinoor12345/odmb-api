@@ -1,13 +1,13 @@
 pipeline {
     agent any
     environment {
-        DOCKER_IMAGE = 'abdinoor12345/react-app'
+        DOCKER_IMAGE = 'abdinoor12345/react-app1'
         DOCKER_TAG = 'latest'
     }
     stages {
         stage('Checkout Code') {
             steps {
-                git 'https://github.com/your-username/your-repo.git' // Replace with your repo URL
+                git 'https://github.com/abdinoor12345/batman-movies' 
             }
         }
         stage('Build Docker Image') {
